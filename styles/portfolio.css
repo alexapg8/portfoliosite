@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Sacramento&display=swap');
+html {
+	box-sizing:border-box;
+}
+*,*::before, *::after {
+	box-sizing:inherit;
+}
+body {
+	margin:0;
+	font-family:"Pathway Gothic One",sans-serif;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+h3 {
+	margin:0;
+	padding-top:0.5em;
+}
+header {
+	border-bottom: 1px solid #908f8f;
+}
+a {
+	text-decoration:none;
+}
+a:link {
+  color:#000;
+  text-decoration:none;
+}
+a:visited {
+  color:#000;
+}
+#footer-menu li a:visited {
+  color:#fff;
+}
+a:hover {
+  color:#908f8f;
+  text-decoration:none;
+}
+a:active {
+  color:#fbba16;
+}
+#footer-menu li a:active{
+  color:#fff;
+}
+.hidden {
+	position:absolute;
+	left:-10000px;
+	width:1px;
+	height:1px;
+}
+.page-wrapper {
+	max-width:980px;
+	margin:0 auto;
+	border-style:none;
+}
+#banner {
+	position:relative;
+	color:#fff;
+	background-color:#000;
+}
+.banner-content {
+	position:absolute;
+	width:100%;
+	z-index:100;
+}
+.banner-img img {
+	display:block;
+	margin:0 auto;
+}
+#banner .about-me { 
+	font-size:3.75em;
+	margin-top:0.6em;
+	font-family:"Sacramento", Georgia, serif;
+	color:#fbba16;
+	text-shadow: 2px 2px 5px black;
+}
+#banner .about-me-text {
+	font-size:2em;
+	margin-top:10em;
+	text-align:center;
+	text-shadow: 2px 2px 5px black;
+	border-bottom: 2px solid #fbba16;
+}
+#footer-navigation {
+	margin-top:1em;
+	margin-bottom:0;
+	background-color:#fbba16;
+	height:65px;
+}
+[id^="column"] {
+	flex:1 0 0;
+	font-family:"Sacramento", Georgia, serif;
+	font-size:2em;
+	color:#fbba16;
+	padding-top:0;
+}
+[id^="column"] img:hover{
+	opacity: 70%;
+}
+#column-one {
+	margin-right:-3em;
+}
+#column-two {
+	margin-left:-3em;
+}
+#column-one {
+	margin-left:3em;
+}
+#column-two {
+	margin-right:3em;
+}
+.flex-container {
+	display:flex;
+	flex-flow:row wrap;
+	align-items:center;
+	margin:auto;
+	padding-top:2em;
+	padding-bottom: 1em;
+}
+
+.flex-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:50%;
+	height:auto;
+}
+.subtitles {
+	text-align:center;
+}
+#logo {
+	text-align:center;
+	margin-top:1em;
+}
+#main-navigation li, #footer-navigation li {
+	display:inline-block;
+	list-style-type:none;
+    text-transform:uppercase;
+	margin-left:4em;
+	font-size:1.25em;
+}
+#main-navigation li:nth-child(2){
+	margin-right:15em;
+}
+#main-navigation li:first-child{
+	margin-left:0em;
+}
+#main-navigation li:last-child{
+	margin-right:0em;
+}
+#footer-navigation li {
+	margin-top:21px;
+}
+#copyright-text {
+	margin-top:1em;
+	margin-bottom:1em;
+	margin-left:16.5em;
+	text-align:left;
+}
+#main-navigation li:nth-child(2)::before, #main-navigation li:last-child::before {
+  content:'|';
+  margin-right:4em;
+}
+#footer-navigation li::before {
+  content:'|';
+  margin-right:3.5em;
+}
+#footer-navigation li:first-child::before {
+  content:none;
+}
+#footer-navigation ul {
+	text-align:center;
+	padding:0;
+	margin-left:-5em;
+}
+#aboutme_p {
+	width:40%;
+	margin:auto;
+	font-size:1.2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}
+.page-intro {
+	margin-top:0;
+	text-align: center;
+	font-size:1.2em;
+	color:#fbba16;
+	font-weight: bold;
+	letter-spacing:0.02em;
+}
+.case-intro {
+	margin-top:0;
+	font-size:1.3em;
+	color:#000;
+}
+.case-intro p{
+	font-size:0.8em;
+}
+#img_aboutme {
+	width:40%;
+	height:auto;
+	vertical-align: middle;
+}
+#social_icons img{
+	width:3%;
+	height: auto;
+	margin:0.5em;
+}
+#social_icons img:hover {
+	opacity: 70%;
+}
+#social_icons {
+	text-align:center;
+}
+.web-projects-info {
+	padding-top:1em;
+	padding-bottom:1em;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	border-bottom: 2px solid #fbba16;
+}
+.case-div {
+	padding-top:1em;
+	padding-bottom:1em;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	border-bottom: 2px solid #fbba16;
+}
+.web-projects-info-det {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+.web-projects-info-det p{
+	text-align:left;
+	margin-left:0.5em;
+}
+.web-projects-info-det img{
+	width: 30px;
+	flex-shrink: 0;
+	height: auto;
+	margin-right:1em;
+}
+.web-projects-info-img {
+	margin:2em;
+	width:30%;
+	height:auto;
+	flex-shrink: 0;
+}
+#page-container {
+	width:60%;
+	height: auto;
+	margin: auto;
+}
+.web-projects, .graphic-projects {
+	text-align: center;
+	position: relative;
+	border-radius: 10px;
+	background: white;
+	padding:0.8em;
+	margin-bottom:2em;
+}
+#page-container h1, #aboutme_p h1{
+	font-family:"Sacramento", Georgia, serif;
+	text-align:center;
+	font-size:3em;
+	margin-bottom:0.2em;
+}
+.web-projects-title, .graphic-projects-title {
+	border-bottom: 2px solid #fbba16;
+	color:#908f8f;
+	padding:1em;
+	font-size:2em;
+	cursor: pointer;
+	margin-bottom:0;
+}
+#aboutme_p h2 {
+	margin-top:0;
+	border-bottom: 2px solid #fbba16;
+	padding:1em;
+	font-size:2em;
+	margin-bottom:0;
+}
+#case-title {
+	border-bottom: 2px solid #fbba16;
+	color:#908f8f;
+	font-size:2em;
+	padding:1em;
+	text-align:center;
+	margin-bottom:1em;
+}
+.page-highlight{
+	background-color: #fbba16;
+}
+.case-subtitle{
+	color: #fbba16;
+}
+#graphic-socialmainImg, #graphic-logomainImg, #graphic-photomainImg, #graphic-illusmainImg {
+	height:400px;
+	width:auto;
+}
+#graphic-topPic, #graphic-logotopPic, #graphic-phototopPic, #graphic-illustopPic {
+	background-color: #bebdbd;
+	padding:1em;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+#aboutme_skills {
+	border-bottom: 2px solid #fbba16;
+	padding-bottom:1em;
+	margin-bottom:1em;
+}
+.graphic-gallery img{
+	cursor:pointer;
+}
+@media screen and (max-width:1150px) {
+.flex-container-form {
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+h3 {
+	text-align: center;
+}
+#column-one, #column-two {
+	margin: 0;
+}
+
+#footer-menu {
+	margin-top: 0;
+}
+
+#footer-navigation {
+	margin-top: 0;
+}
+}
+@media screen and (max-width:944px) {
+#main-navigation {
+	text-align:center;
+}
+#footer-navigation li::before,#main-navigation li::before {
+  content:'|';
+  margin-right:1em;
+}
+#footer-navigation li:first-child::before, #main-navigation li:first-child::before {
+  content:none;
+}
+#main-navigation li:nth-child(2){
+	margin-right:0;
+}
+}
+@media screen and (max-width:768px) {
+#logo-image {
+	width:50%;
+	height:auto;
+}
+#main-navigation li, #footer-navigation li {
+	font-size:1.03em;
+	margin-left:2.5em;
+}
+#footer-navigation li::before,#main-navigation li::before {
+    content:'|';
+    margin-right:2.5em;
+}
+[id^="column"] img {
+	width:60%;
+	height:auto;
+}
+h3 {
+	font-size:1em;
+}
+#copyright-text {
+	margin-left:4em;
+}
+.web-projects-info, .case-div {
+	padding-top:1em;
+	padding-bottom:1em;
+	display: inline-block;
+	align-items: center;
+	justify-content: left;
+	border-bottom: 2px solid #fbba16;
+}
+.web-projects-info-img {
+	margin:2em;
+	width:60%;
+	height:auto;
+	flex-shrink: 0;
+}
+#social_icons img{
+	width:8%;
+	height: auto;
+	margin:0.5em;
+}
+#img_aboutme {
+	width:60%;
+	height:auto;
+	vertical-align: middle;
+}
+#aboutme_p {
+	width:80%;
+	margin:auto;
+	font-size:1.2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}
+#page-container{
+	width:80%;
+}
+#graphic-topPic, #graphic-logotopPic, #graphic-phototopPic, #graphic-illustopPic {
+	display: none;
+}
+#banner .about-me-text {
+	font-size:1.5em;
+	margin-top:8em;
+	margin-left:1.5em;
+	text-align:center;
+	width:90%;
+}
+.page-wrapper {
+	margin:auto;
+}
+}
+@media screen and (max-width:590px) {
+#footer-navigation li {
+	font-size:1em;
+	margin-left:2em;
+}
+#footer-navigation li::before {
+    content:'|';
+    margin-right:2em;
+}
+
+}
+@media screen and (max-width:530px) {
+
+#main-navigation li, #footer-navigation li {
+	font-size:1em;
+	margin-left:1.5em;
+}
+#footer-navigation li::before,#main-navigation li::before {
+    content:'|';
+    margin-right:1.5em;
+}
+}
+@media screen and (max-width:480px) {
+#footer-navigation li:first-child{
+	margin-left:5em;
+}
+#main-navigation li:nth-child(2)::before, #main-navigation li:last-child::before {
+  content:'|';
+  margin-right:1em;;
+}
+#main-navigation ul {
+	padding-left:0;
+}
+#banner img {
+	height:220px;
+	width:auto;
+}
+[id^="column"] img {
+	width:50%;
+	height:auto;
+}
+[id^="column"] {
+	flex:1 0 100%;
+	margin-left:0;
+	margin-bottom:1em;
+	}
+.flex-container-form {
+    display:flex;
+	flex-direction:column;
+	width:100%;
+}
+#banner .about-me-text {
+	font-size:1em;
+	margin-top:9em;
+	margin-left:1em;
+
+}
+.subtitles {
+	margin-bottom:1em;
+}
+#graphic-gallery {
+	margin-top:1em;
+}
+}
